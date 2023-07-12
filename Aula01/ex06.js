@@ -13,9 +13,9 @@ let nota04 = parseInt(prompt("Digite a quarta nota: "));
 let media = (nota01+nota02+nota03+nota04)/4
 
 if(media>=7){
-    console.log("Parabéns, você foi aprovado!")
+    console.log("Parabéns, você foi aprovado! Nota: "+media)
 } else if(media >= 5 && media < 7) {
-    console.log("Você precisa fazer RECUPERAÇÃO!")
+    console.log("Você precisa fazer RECUPERAÇÃO! Nota: "+media)
 }else{
-    console.log("Você foi reprovado!") 
+    console.log("Você foi reprovado! Nota: "+media) 
 }
