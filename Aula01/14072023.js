@@ -57,4 +57,12 @@ let prompt = require(`prompt-sync`)()
 //     numeroEscolhido = prompt("Digite um número inteiro: ");
 // }while(numeroEscolhido !="5");
 
+let senha;
+do{
+    senha = prompt("Digite a senha: ")
+    if(senha!="123"){
+        console.log("Senha Incorreta");
+    }
+}while(senha!="123");
+console.log("Senha correta");
 
