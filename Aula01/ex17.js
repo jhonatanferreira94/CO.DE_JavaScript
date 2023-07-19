@@ -3,7 +3,10 @@
  let sn = 1;
  let tn;
 
-for (contagem = 0; contagem <10; contagem++) {
+console.log(pn);
+console.log(sn);
+
+for (contagem = 0; contagem <100; contagem++) { // o for vai passar pelos "casas" e a equacao faz a sequencia surgir.
 
     tn = pn + sn;
     pn = sn;
