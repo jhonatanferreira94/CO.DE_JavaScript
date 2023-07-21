@@ -6,17 +6,38 @@
 // Valor total da compra acima de R$ 200,00: desconto de 20%.
 // Exiba o valor final da compra com o desconto aplicado.
 
-let prompt = require(`prompt-sync`)()
+import PromptSync from "prompt-sync";
+const prompt = PromptSync()
 
-let valorCompra = parseInt(prompt("Digite o valor da compra: "));
 
-if(valorCompra > 100 && valorCompra <= 200){
-    let novoValor = valorCompra-(valorCompra*(10/100))
-    console.log(`O valor final da compra: R$${novoValor}`)
+// let valorCompra = parseInt(prompt("Digite o valor da compra: "));
 
-} else if (valorCompra > 200){
-    let novoValor = valorCompra-(valorCompra*(20/100))
-    console.log(`O valor final da compra: R$${novoValor}`)
-}else{
-    console.log("Sem desconto, baby!")
+// if (valorCompra > 100 && valorCompra <= 200) {
+//     let novoValor = valorCompra - (valorCompra * (10 / 100))
+//     console.log(`O valor final da compra: R$${novoValor}`)
+
+// } else if (valorCompra > 200) {
+//     let novoValor = valorCompra - (valorCompra * (20 / 100))
+//     console.log(`O valor final da compra: R$${novoValor}`)
+// } else {
+//     console.log("Sem desconto, baby!")
+// }
+
+
+
+export function exercicio11() {
+
+    let valorCompra = parseInt(prompt("Digite o valor da compra: "));
+
+    if (valorCompra > 100 && valorCompra <= 200) {
+        let novoValor = valorCompra - (valorCompra * (10 / 100))
+        console.log(`O valor final da compra: R$${novoValor}`)
+
+    } else if (valorCompra > 200) {
+        let novoValor = valorCompra - (valorCompra * (20 / 100))
+        console.log(`O valor final da compra: R$${novoValor}`)
+    } else {
+        console.log("Sem desconto, baby!")
+    }
+
 }
